@@ -1,6 +1,6 @@
 import Application from '../Application';
 import ButtonHandler from './Handlers/ButtonHandler';
-import CommandHancler from './Handlers/CommandHandler';
+import CommandHandler from './Handlers/CommandHandler';
 import DiscordUtils from './Private/DiscordUtils';
 import InteractionHandler from './Handlers/InteractionHandler';
 import StateHandler from './Handlers/StateHandler';
@@ -19,7 +19,7 @@ class DiscordManager {
     this.Application = app;
     this.interactionHandler = new InteractionHandler(this);
     this.stateHandler = new StateHandler(this);
-    this.commandHandler = new CommandHancler(this);
+    this.commandHandler = new CommandHandler(this);
     this.buttonHandler = new ButtonHandler(this);
     this.utils = new DiscordUtils(this);
   }
